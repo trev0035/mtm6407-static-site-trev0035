@@ -1,0 +1,14 @@
+<nav class="main-nav">
+  <button class="menu-toggle" aria-expanded="false">
+    <span class="sr-only">Menu</span>
+    <span class="menu-bar"></span>
+  </button>
+  
+  <ul class="nav-links">
+    <li><a href="{{ '/' | url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+    <li><a href="{{ '/plants/' | url }}" {% if page.url == '/plants/' %}class="active"{% endif %}>Plant Gallery</a></li>
+    <li><a href="{{ '/grow-your-own/' | url }}" {% if page.url == '/grow-your-own/' %}class="active"{% endif %}>Grow Your Own</a></li>
+    <li><a href="{{ '/fun-activities/' | url }}" {% if page.url == '/fun-activities/' %}class="active"{% endif %}>Root Wonders</a></li>
+    <li><a href="{{ '/about/' | url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a></li>
+  </ul>
+</nav> 

@@ -1,0 +1,151 @@
+---
+layout: base.njk
+title: Grow Your Own
+---
+
+<div class="grow-hero">
+  <div class="grow-hero-content">
+    <h1>Grow Your Own <span class="accent-text">Plant Friends!</span></h1>
+    <p class="grow-subtitle">Ready to become a plant parent? Let's get growing!</p>
+  </div>
+  <div class="grow-hero-image">
+    <img src="{{ '/assets/images/propagation.png' | url }}" alt="Plant propagation illustration">
+  </div>
+</div>
+
+<div class="chat-container">
+  <div class="chat-message bot">
+    <div class="chat-bubble">
+      <p>Hey there, plant explorer! 🌿</p>
+      <p>Growing your own plants is like having a magical science experiment right in your home! Would you like to learn how to start your very first garden?</p>
+    </div>
+  </div>
+  
+  <div class="chat-message user">
+    <div class="chat-bubble">
+      <p>Yes! What do I need to get started?</p>
+    </div>
+  </div>
+  
+  <div class="chat-message bot">
+    <div class="chat-bubble">
+      <h3>Here's what you'll need:</h3>
+      <ul class="supplies-list">
+        <li><span class="emoji">🌱</span> Seeds or small plants</li>
+        <li><span class="emoji">🪴</span> Containers with drainage holes</li>
+        <li><span class="emoji">🌍</span> Potting soil</li>
+        <li><span class="emoji">💧</span> Small watering can</li>
+        <li><span class="emoji">🏷️</span> Labels for your plants</li>
+        <li><span class="emoji">☀️</span> A sunny spot</li>
+      </ul>
+      <p>Do you have all these supplies?</p>
+    </div>
+  </div>
+  
+  <div class="chat-message user">
+    <div class="chat-bubble">
+      <p>I think so! What's next?</p>
+    </div>
+  </div>
+</div>
+
+<div class="growing-steps">
+  <h2>Let's Get <span class="accent-text">Growing!</span></h2>
+  
+  <div class="steps-container">
+    <div class="step-card">
+      <div class="step-number">1</div>
+      <h3>Planting Your Seeds</h3>
+      <div class="step-content">
+        <ol>
+          <li>Fill your container with potting soil, leaving about an inch of space at the top</li>
+          <li>Make small holes with your finger (check your seed packet for the right depth)</li>
+          <li>Place 2-3 seeds in each hole</li>
+          <li>Cover gently with soil</li>
+          <li>Label your plant</li>
+          <li>Water gently until the soil is damp but not soaking wet</li>
+        </ol>
+      </div>
+    </div>
+    
+    <div class="step-card">
+      <div class="step-number">2</div>
+      <h3>Daily Plant Care</h3>
+      <div class="step-content">
+        <ul>
+          <li><span class="emoji">☀️</span> Place your containers in a sunny spot</li>
+          <li><span class="emoji">👆</span> Check the soil every day - if it feels dry, water it</li>
+          <li><span class="emoji">🔍</span> Watch for little green sprouts to appear!</li>
+          <li><span class="emoji">📏</span> As your plants grow, they might need bigger containers</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="step-card">
+      <div class="step-number">3</div>
+      <h3>Watch Them Grow</h3>
+      <div class="step-content">
+        <p>Plants are amazing! They can tell you what they need:</p>
+        <div class="plant-signals">
+          <div class="signal"><span class="emoji">🥀</span> Droopy leaves = needs water</div>
+          <div class="signal"><span class="emoji">💛</span> Yellow leaves = too much water</div>
+          <div class="signal"><span class="emoji">🍠</span> Stretching tall and thin = needs more light</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fun-projects-section">
+  <div class="projects-intro">
+    <h2>Super Fun <span class="accent-text">Plant Projects</span></h2>
+    <p>Try these fun planting ideas that you can do right now!</p>
+  </div>
+  
+  <div class="interactive-projects">
+    <div class="project-card">
+      <div class="project-icon">🌿</div>
+      <h3>Windowsill Herb Garden</h3>
+      <p>Grow herbs like basil, mint, and chives in small pots on your windowsill. You can use them to flavor your food!</p>
+      <button class="project-btn">Try This!</button>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-icon">🍕</div>
+      <h3>Pizza Garden</h3>
+      <p>Grow all the plants you need for pizza toppings: tomatoes, basil, oregano, and peppers!</p>
+      <button class="project-btn">Try This!</button>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-icon">🦋</div>
+      <h3>Butterfly Garden</h3>
+      <p>Plant flowers that butterflies love, like zinnias, cosmos, and sunflowers, to attract these beautiful insects.</p>
+      <button class="project-btn">Try This!</button>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-icon">🌻</div>
+      <h3>Giant Sunflower</h3>
+      <p>Plant mammoth sunflower seeds and see how tall they can grow! Measure your sunflower every week.</p>
+      <button class="project-btn">Try This!</button>
+    </div>
+  </div>
+</div>
+
+<div class="grow-cta">
+  <h2>Ready to start your plant adventure?</h2>
+  <p>Remember, plants are living things that need your care. Be patient, have fun, and enjoy watching your green friends grow!</p>
+  <a href="{{ '/plants/' | url }}" class="btn">Explore More Plants</a>
+</div>
+
+<script>
+  // Simple interaction for the project buttons
+  document.querySelectorAll('.project-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const projectName = this.previousElementSibling.previousElementSibling.textContent;
+      alert(`Great choice! ${projectName} is a wonderful project to try. Start by gathering the supplies you need!`);
+    });
+  });
+</script>
+</section>

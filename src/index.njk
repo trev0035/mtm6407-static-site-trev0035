@@ -1,0 +1,76 @@
+---
+layout: base.njk
+title: Home
+---
+
+<div class="hero">
+  <img src="{{ '/assets/images/home-image.png' | url }}" alt="Colorful illustrations of plants" class="hero-image">
+  <h1>Welcome to Plant Wonders!</h1>
+  <p>A colorful journey through the amazing world of indoor plants for curious young minds!</p>
+</div>
+
+<section class="intro">
+  <h2>Discover the Magic of Indoor Plants</h2>
+  <p>
+    Hello, plant explorers! Are you ready to embark on an exciting adventure through the wonderful world of indoor plants? 
+    Houseplants are incredible living things that can beautify your home, purify your air, and bring nature indoors.
+    They come in all shapes, sizes, and colors, and can be an amazing addition to any space!
+  </p>
+  <p>
+    On this website, you'll learn fascinating facts about different types of indoor plants, discover how to propagate them,
+    find out how to care for them, and even learn about the important role of roots in plant health!
+  </p>
+</section>
+
+<section class="featured-plants">
+  <h2>Featured Plants</h2>
+  <div class="plant-cards">
+    <article class="plant-card">
+      <img src="{{ '/assets/images/Anthurium .png' | url }}" alt="Anthurium">
+      <div class="plant-card-content">
+        <h3>Anthurium</h3>
+        <p>The striking plant with glossy heart-shaped flowers!</p>
+        <div class="badge-container">
+          <span class="feature-badge badge-pink">Low Light</span>
+          <span class="feature-badge badge-blue">Air Purifier</span>
+        </div>
+        <a href="{{ '/plants/anthurium/' | url }}" class="btn btn-green">Learn More</a>
+      </div>
+    </article>
+    
+    <article class="plant-card">
+      <img src="{{ '/assets/images/monstera.png' | url }}" alt="Monstera">
+      <div class="plant-card-content">
+        <h3>Monstera</h3>
+        <p>Famous for its stunning split leaves and tropical vibe!</p>
+        <div class="badge-container">
+          <span class="feature-badge badge-green">Easy Care</span>
+          <span class="feature-badge badge-purple">Pet Safe</span>
+        </div>
+        <a href="{{ '/plants/monstera/' | url }}" class="btn btn-blue">Learn More</a>
+      </div>
+    </article>
+    
+    <article class="plant-card">
+      <img src="{{ '/assets/images/Tradescantia.png' | url }}" alt="Tradescantia Nanouk">
+      <div class="plant-card-content">
+        <h3>Tradescantia Nanouk</h3>
+        <p>Stunning pink and purple foliage that grows quickly!</p>
+        <div class="badge-container">
+          <span class="feature-badge badge-orange">Fast Grower</span>
+          <span class="feature-badge badge-yellow">Bright Light</span>
+        </div>
+        <a href="{{ '/plants/tradescantia/' | url }}" class="btn btn-pink">Learn More</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Start Your Plant Adventure!</h2>
+  <p>
+    Ready to explore? Click on the navigation links above to start your journey through the world of indoor plants!
+    Don't forget to check out our "Grow Your Own" section to learn how to propagate your very own plants.
+  </p>
+  <a href="{{ '/grow-your-own/' | url }}" class="btn btn-yellow">Start Growing!</a>
+</section> 

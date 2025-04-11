@@ -1,0 +1,39 @@
+---
+layout: base.njk
+---
+
+<div class="plant-feature">
+  <div class="plant-header">
+    <h1 class="plant-title">{{ title }}</h1>
+    {% if subtitle %}
+      <p class="plant-subtitle">{{ subtitle }}</p>
+    {% endif %}
+  </div>
+
+  <div class="plant-content">
+    <div class="plant-image-container">
+      {% if featured_image %}
+        <img src="{{ featured_image | url }}" alt="{{ title }}" class="plant-featured-image">
+      {% endif %}
+    </div>
+
+    <div class="plant-info">
+      {{ content | safe }}
+
+      {% if fun_facts %}
+      <div class="fun-facts-box">
+        <h3>Fun Facts!</h3>
+        <ul class="fun-facts-list">
+          {% for fact in fun_facts %}
+            <li>{{ fact }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="navigation-buttons">
+    <a href="{{ '/' | url }}" class="btn btn-primary">Back to Home</a>
+  </div>
+</div> 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Plant Wonders: A Children's Guide</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="{{ '/assets/svg/plantwonders.svg' | url }}" type="image/svg+xml">
+  <style>
+    html, body {
+      cursor: url("{{ '/assets/svg/plantwonders.svg' | url }}") 25 25, auto;
+    }
+    a, button, .btn, input[type="submit"] {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <div class="book-page">
+      <header class="site-header">
+        <div class="container">
+          <h1 class="site-title"><a href="{{ '/' | url }}">Plant Wonders</a></h1>
+          {% include 'navigation.njk' %}
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="container">
+          {{ content | safe }}
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>&copy; {% year %} Plant Wonders - Created by Regina Trevs</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  
+  <script src="{{ '/assets/js/main.js' | url }}"></script>
+</body>
+</html> 

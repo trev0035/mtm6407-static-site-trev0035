@@ -1,0 +1,30 @@
+{
+  "name": "mtm6407-static-site-trev0035",
+  "version": "1.0.0",
+  "description": "**Name:** Regina Trevs **Student Number:** [Your Student Number] **Static Site Generator:** Eleventy (11ty)",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trev0035/mtm6407-static-site-trev0035.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/trev0035/mtm6407-static-site-trev0035/issues"
+  },
+  "homepage": "https://github.com/trev0035/mtm6407-static-site-trev0035#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.0"
+  }
+}
