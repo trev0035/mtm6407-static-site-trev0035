@@ -6,6 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
+    "build:github": "eleventy --pathprefix=mtm6407-static-site-trev0035",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
