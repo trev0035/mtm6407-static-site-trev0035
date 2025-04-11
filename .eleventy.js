@@ -11,10 +11,17 @@ module.exports = function(eleventyConfig) {
   // Add a shortcode for the current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  // Customize the repository name as path prefix for GitHub Pages
-  // If your repository is username.github.io, you can leave this empty
-  // Otherwise, use the repository name: /repository-name
-  const pathPrefix = "/mtm6407-static-site-trev0035";
+  // Determine if we're building for GitHub Pages
+  // If NETLIFY environment variable exists, we're on Netlify
+  const isNetlify = process.env.NETLIFY === 'true';
+  
+  // For GitHub Pages, use the repository name as path prefix
+  // For Netlify, no path prefix is needed
+  const pathPrefix = isNetlify 
+    ? '/' 
+    : "/mtm6407-static-site-trev0035";
+
+  console.log(`Building for ${isNetlify ? 'Netlify' : 'GitHub Pages'} with pathPrefix: ${pathPrefix}`);
 
   return {
     dir: {
