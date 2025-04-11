@@ -2,6 +2,9 @@ module.exports = function(eleventyConfig) {
   // Pass through assets
   eleventyConfig.addPassthroughCopy("src/assets");
   
+  // Pass through .nojekyll file
+  eleventyConfig.addPassthroughCopy(".nojekyll");
+  
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget("src/assets/css/");
   

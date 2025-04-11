@@ -6,7 +6,8 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "build:github": "eleventy --pathprefix=mtm6407-static-site-trev0035",
+    "build:github": "eleventy --pathprefix=/mtm6407-static-site-trev0035",
+    "build:github-pages": "node scripts/build-github.js",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
