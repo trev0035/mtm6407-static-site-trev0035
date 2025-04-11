@@ -3,7 +3,7 @@
   command = "node scripts/build-netlify.js"
 
 [build.environment]
-  NODE_VERSION = "16"
+  NODE_VERSION = "18"
   NETLIFY = "true"
 
 # Redirect any 404s to index for SPA-like behavior
