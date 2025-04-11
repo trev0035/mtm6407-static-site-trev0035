@@ -6,6 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
+    "build:netlify": "node scripts/build-netlify.js",
     "build:github": "eleventy --pathprefix=/mtm6407-static-site-trev0035",
     "build:github-pages": "node scripts/build-github.js",
     "debug": "DEBUG=* eleventy"
